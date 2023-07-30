@@ -96,7 +96,7 @@ gulp.task('default', ['build'], function() {
 
   // Watch templates, JS, and CSS, reload on change
   gulp.watch([
-      '**/*.php',
+      '**/*.js',
       '**/*.html',
       'css/*.css',
       'js/**/*.js'
