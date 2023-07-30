@@ -1,4 +1,4 @@
-runtime: php55
+runtime: node
 api_version: 1
 threadsafe: true
 default_expiration: 1m
@@ -16,7 +16,7 @@ skip_files:
 
 handlers:
 # Serve php scripts.
-- url: /(.+\.php)
+- url: /(.+\.js)
   script: \1
   login: required
 
@@ -46,11 +46,11 @@ handlers:
   upload: (.*\.css)
 
 - url: /ajax/(.*)\.json
-  script: /ajax/\1.php
+  script: /ajax/\1.js
 
 
 - url: /.*
-  script: index.php
+  script: index.js
 
 
 
